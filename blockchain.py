@@ -63,7 +63,7 @@ class Blockchain:
             blockIndex += 1
         return True
     
-    def addTransacction(self, sender, reciever, amount):
+    def addTransaction(self, sender, reciever, amount):
         self.transactions.append({
             'sender': sender,
             'reciever': reciever,
@@ -107,7 +107,7 @@ def mineBlock():
     previousProof = previousBlock['proof']
     proof = blockchain.proofOfWork(previousProof)
     previousHash = blockchain.hash(previousBlock)
-    blockchain.addTransacction(sender = nodeAddress, reciever = 'Onais', amount = 100)
+    blockchain.addTransaction(sender = nodeAddress, reciever = 'Onais', amount = 100)
     block = blockchain.createBlock(proof, previousHash)
     
     response = {
