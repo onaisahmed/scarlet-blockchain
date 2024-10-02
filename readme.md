@@ -69,7 +69,7 @@ The project follows a structured layout for better organization:
 You can start all nodes simultaneously by running the run_nodes.sh script:
 
 ```bash
-chmod +x start_nodes.sh  # Make the script executable (Linux/Mac)
+chmod +x run_nodes.sh    # Make the script executable (Linux/Mac)
 ./run_nodes.sh           # Start all nodes
 
 ```
